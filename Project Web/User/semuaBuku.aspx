@@ -44,7 +44,7 @@
                         <div class="portfolio-wrap">
                             <%Dim imageUrl As String = "data:image/jpg;base64," & Convert.ToBase64String(CType(modul.cover_buku, Byte()))
                                 CType(Image1, Image).ImageUrl = imageUrl %>
-                            <asp:Image ID="Image1" runat="server" cssClass="img-fluid" Width="1000"/>
+                            <asp:Image ID="Image1" runat="server" cssClass="img-fluid" Width="400"/>
                             <div class="portfolio-info">
                                 <h4><%=modul.nama_buku %></h4>
                                 <p><%=modul.deskripsi_buku %></p>

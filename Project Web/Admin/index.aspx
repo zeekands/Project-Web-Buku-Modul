@@ -60,9 +60,10 @@
 
             </nav>
             <!-- End of Topbar -->
+            </div>
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
+        <div class="container-fluid">
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -197,7 +198,7 @@
 
                                     <SortedDescendingHeaderStyle BackColor="#4870BE"></SortedDescendingHeaderStyle>
                                 </asp:GridView>
-                                <asp:GridView CssClass="table " ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id_buku" DataSourceID="DataBuku" OnRowDataBound="OnRowDataBound" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True">
+                                <asp:GridView CssClass="table " ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id_buku" DataSourceID="DataBuku" OnRowDataBound="OnRowDataBound" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True">
                                     <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
                                     <Columns>
 
@@ -287,8 +288,7 @@
                                 </div>
                                 <div class="md-form mb-2">
                                     <label data-error="wrong" data-success="right" for="form2">File Buku</label><br />
-                                    <asp:FileUpload ID="FileBuku" runat="server" AllowMultiple="true" /><br />
-                                    <asp:Label runat="server" Text="File tidak boleh lebih dari 2 MB" ForeColor="red"></asp:Label>
+                                    <asp:FileUpload ID="FileBuku" runat="server" AllowMultiple="true" />
                                 </div>
                                 <div class="md-form mb-2">
                                     <label data-error="wrong" data-success="right" for="form2">Penerbit</label>

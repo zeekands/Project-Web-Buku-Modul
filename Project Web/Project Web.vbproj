@@ -175,18 +175,11 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Admin\.gitignore" />
-    <Content Include="Admin\404.html" />
     <Content Include="Admin\akun.aspx" />
-    <Content Include="Admin\blank.html" />
-    <Content Include="Admin\buttons.html" />
-    <Content Include="Admin\cards.html" />
-    <Content Include="Admin\charts.html" />
     <Content Include="Admin\css\sb-admin-2.css" />
     <Content Include="Admin\css\sb-admin-2.min.css" />
     <Content Include="Admin\daftarKomentar.aspx" />
-    <Content Include="Admin\forgot-password.html" />
     <Content Include="Admin\gulpfile.js" />
     <Content Include="Admin\img\undraw_posting_photo.svg" />
     <Content Include="Admin\img\undraw_profile.svg" />
@@ -202,15 +195,8 @@
     <Content Include="Admin\js\demo\datatables-demo.js" />
     <Content Include="Admin\js\sb-admin-2.js" />
     <Content Include="Admin\js\sb-admin-2.min.js" />
-    <Content Include="Admin\login.html" />
     <Content Include="Admin\logout.aspx" />
     <Content Include="Admin\PRO_UPGRADE.txt" />
-    <Content Include="Admin\register.html" />
-    <Content Include="Admin\tables.html" />
-    <Content Include="Admin\utilities-animation.html" />
-    <Content Include="Admin\utilities-border.html" />
-    <Content Include="Admin\utilities-color.html" />
-    <Content Include="Admin\utilities-other.html" />
     <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Admin\vendor\bootstrap\js\bootstrap.js" />
@@ -1880,14 +1866,12 @@
     <Content Include="Admin\vendor\jquery\jquery.min.js" />
     <Content Include="Admin\vendor\jquery\jquery.slim.js" />
     <Content Include="Admin\vendor\jquery\jquery.slim.min.js" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\head.aspx" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1921,7 +1905,6 @@
     <Content Include="User\semuaBuku.aspx" />
     <Content Include="User\succesPage.aspx" />
     <Content Include="User\WebForm2.aspx" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="Admin\.browserslistrc" />
     <Content Include="Admin\.travis.yml" />
     <Content Include="Admin\LICENSE" />
@@ -2275,33 +2258,12 @@
     <Compile Include="App_Code\Komentar.vb" />
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="About.aspx.designer.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="About.aspx.vb">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Content\head.aspx.designer.vb">
       <DependentUpon>head.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\head.aspx.vb">
       <DependentUpon>head.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.vb">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.designer.vb">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2436,13 +2398,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

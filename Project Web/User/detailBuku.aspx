@@ -33,7 +33,6 @@
                             <asp:Image ID="Image1" runat="server" cssClass="img-fluid" Width="400" ImageAlign="Middle"/>
                             </center>
                     </div>
-
                     <div class="col-lg-4 portfolio-info">
                         <h3>Detail</h3>
                         <ul>
@@ -45,7 +44,6 @@
                         </ul>
                         <p><%=Buku.deskripsi_buku %> </p>
                         <asp:Button CssClass="btn btn-success" Text="Unduh" ID="btnDownload" OnClick="btnDownload_Click" runat="server" />
-
                     </div>
                 </div>
                 <br />
@@ -69,7 +67,7 @@
                                 <div class="media-body">
                                     <p><%=komentar.komentar %></p>
                                     <div class="comment-meta">
-                                        <%If Session("id") = komentar.idAkun Then %>                                  
+                                        <%If Session("id") = komentar.idAkun Then %>      
                                         <span><a href="deleteKomentar.aspx?id=<%=komentar.idKomentar %>&idBuku=<%=komentar.idBuku %>">delete</a></span>
                                         <%End If %>
                                     </div>
@@ -79,6 +77,7 @@
                             <%Next %>
                         </div>
                     </div>
+                </div>
                 </div>
         </section>
         <!-- End Portfolio Details Section -->

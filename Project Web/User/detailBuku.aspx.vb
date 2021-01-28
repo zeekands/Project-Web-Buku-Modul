@@ -20,7 +20,10 @@ Public Class detailBuku
     Protected Sub btnDownload_Click(sender As Object, e As EventArgs)
         ID = Request.QueryString("id").ToString()
         UpdateInfoDownload(ID)
+        downloadBuku()
+    End Sub
 
+    Sub downloadBuku()
         Response.Buffer = True
         Response.Charset = ""
         Response.Cache.SetCacheability(HttpCacheability.NoCache)
@@ -30,13 +33,12 @@ Public Class detailBuku
         Response.AddHeader("Content-Description", "File Download")
         Response.AddHeader("Content-Type", "application/force-download")
         Response.AddHeader("Content-Transfer-Encoding", "binary\n")
-        'Response.AddHeader("content-disposition", "attachment;filename=" + Buku.nama_buku + ".docx")
         Response.AppendHeader("Content-Disposition", "attachment; filename=" + Buku.nama_buku + ".pdf")
         Response.BinaryWrite(Buku.file_buku)
         Response.Flush()
         Response.End()
-
     End Sub
+
     Sub UpdateInfoDownload(id As String)
         Using cmd As New SqlCommand("UPDATE BukuModul SET jumlah_download=jumlah_download+1 WHERE id_buku=@id")
             cmd.Connection = sqlConnection
@@ -104,5 +106,4 @@ Public Class detailBuku
         reader.Close()
         sqlConnection.Close()
     End Sub
-
 End Class
